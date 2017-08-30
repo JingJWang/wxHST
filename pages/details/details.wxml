@@ -1,0 +1,16 @@
+<scroll-view class="box" style="height: {{bodyHeight}}px" scroll-y="true">
+  <view class="top">成交价50元以上包邮。钱先到账、快递回收覆盖全国</view>
+  <view class="goods">
+    <text class="num">订单编号：12152636355255225</text>
+    <text class="stats">订单状态</text>
+    <text class="type">iphone 6SPlus</text>
+    <text class="time">2017-05-20 15:55:55</text>
+  </view>
+  <view class="message">
+    <text class="title">产品信息</text>
+    <view class="cont">
+      <text class="repair">维修拆机史：无拆无修</text>
+      <text class="repair">屏幕外观：完好</text>
+    </view>
+  </view>
+</scroll-view>

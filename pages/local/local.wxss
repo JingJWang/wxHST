@@ -1,0 +1,66 @@
+/* local.wxss */
+.inp{
+  width: 100%;
+  background: #f5f5f5;
+  padding: 20rpx 0;
+  height: 60rpx;
+  float: left;
+}
+.inp_inp{
+  display: block;
+  width: 80%;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #fff;
+  float: left;
+  font-size: 28rpx;
+  color: #676767;
+  padding-left: 2%;
+  border-radius: 10rpx;
+  margin-left:3%;
+}
+.inp_text{
+  width: 14%;
+  display: block;
+  float: left;
+  color: #676767;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  text-align: center;
+}
+.history_local{
+  width: 96%;
+  margin-left: 2%;
+  border-bottom:solid 1px #e8e9ea;
+  float: left;
+}
+.his_box{
+  width: 100%;
+  height: 80rpx;
+  float: left;
+}
+.his_box text{
+  line-height: 80rpx;
+  float: left;
+}
+.his_name{
+  font-size: 28rpx;
+  color: #676767;
+}
+.his_text{
+  font-size: 28rpx;
+  color: #676767;
+  margin: 0 2px 0 360rpx;
+}
+.his_pirce{
+  font-size: 29rpx;
+  color: #f75e25;
+}
+.last_text{
+  float: left;
+  width: 100%;
+  text-align: center;
+  line-height: 90rpx;
+  color: #999;
+  font-size: 28rpx;
+}

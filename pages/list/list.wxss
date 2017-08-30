@@ -1,0 +1,49 @@
+/* list.wxss */
+.box{
+  width: 100%;
+  background: #f5f5f5;
+  float: left;
+}
+.list{
+  width: 90%;
+  padding: 20rpx 0 20rpx 10%;
+  background: #fff;
+  margin-bottom: 15rpx;
+  float: left;
+}
+.shop_img{
+  width: 170rpx;
+  height: 170rpx;
+  background: yellow;
+  float: left;
+}
+.right{
+  float: left;
+  width: 400rpx;
+  padding-left: 50rpx
+}
+.rit{
+  width: 100%;
+  float: left;
+}
+.shop_name{
+  padding-top: 20rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+  color: #575757;
+}
+.shop_price{
+  display: block;
+  line-height: 90rpx;
+  font-size: 32rpx;
+  color: red; 
+  background-image: url("http://www.wxmjj.com/static/shop/images/arrRightGray.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 10px 19px;
+}
+.shop_time{
+  line-height: 26rpx;
+  font-size: 26rpx;
+  color: #575757;
+}

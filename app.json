@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/type/type",
+    "pages/local/local",
+    "pages/repair/repair",
+    "pages/details/details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "backgroundColor": "#f5f5f5",
+    "navigationBarBackgroundColor": "#58ab22",
+    "navigationBarTitleText": "回收通",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "green",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/img/tab_index2.png",
+        "selectedIconPath": "/img/tab_index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "/img/tab_list2.png",
+        "selectedIconPath": "/img/tab_list.png",
+        "text": "订单"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  }
+}

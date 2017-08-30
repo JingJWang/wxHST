@@ -1,0 +1,17 @@
+<view class="type_big" style="height: {{heightt}}px">
+  <block wx:for="{{phoneTypeList}}" wx:key="phoneTypeList" wx:for-item="i" data-save="{{data_save}}">
+    <view class="type_box" hidden="{{hideType}}" bindtap="choose">
+      <!-- 手机大类 -->
+      <view class="big_name" data-bigType="{{phoneName[index].name}}" wx:key="{{phoneName[index].name}}" data-length="{{phoneName[index].name.length}}" data-index="{{phoneName[index].name.index}}" >{{phoneName[index].name}}</view>
+      <!-- 小类 -->
+      <view class="smallType">
+        <block wx:for="{{i}}" wx:for-item="j">
+          <block wx:for="{{phoneSmallType}}" class="smallType" wx:key="id"> 
+            <!-- 手机小类 -->
+            <view class="small_name" wx:if="{{j==index}}" data-id="{{index}}" data-SmallName="{{item}}">{{item}}</view>
+          </block>
+        </block>
+      </view>
+    </view>
+  </block>
+</view>

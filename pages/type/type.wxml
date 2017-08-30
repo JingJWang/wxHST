@@ -1,0 +1,23 @@
+<view class="type" style="height: {{bodyHeight}}px">
+  <!--搜索框-->
+  <view class="inp">
+  <text class="null_text"></text>
+    <input type="text" class="inp_inp" placeholder="搜索您要卖的型号"></input>
+  </view>
+  <view class="type_box" >
+    <scroll-view class="left" scroll-y="true">
+      <block wx:for="{{logsa}}" wx:key="id">
+        <view class="classtype {{currentItem==item.id?'left_type_hover':'left_type'}}" id="{{item.id}}"  bindtap="leftType" data-text="{{item.name}}">{{item.name}}</view>    
+      </block>  
+    </scroll-view>
+     <scroll-view class="right" scroll-y="true">
+      <block wx:for="{{phonetype}}">
+        <view class="span orange" wx:if="{{index == 0}}">{{index+1}}</view>
+        <view class="span yellow" wx:if="{{index == 1}}">{{index+1}}</view>
+        <view class="span blue" wx:if="{{index == 2}}">{{index+1}}</view>
+        <view class="span gray" wx:if="{{index > 2}}">{{index+1}}</view>
+        <view class="right_type classtype" id="{{item.id}}" data-id="{{item.id}}" bindtap="rightType" data-text="{{item.name}}">{{item.name}}</view>
+      </block>
+    </scroll-view> 
+  </view>
+</view>

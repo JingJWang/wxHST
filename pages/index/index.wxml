@@ -1,0 +1,67 @@
+<scroll-view class="container" scroll-y="true" style="height: {{bodyHeight}}px" bindscroll="scrollPlay" scroll-top="{{scrollY}}">
+  <view class="banner"></view>
+  <view class="top_banner">
+    <image class="sous_logo" src="/img/sous_logo.png"></image>
+    <text class="sous_p">搜索您要卖的机型</text>
+  </view>
+  <!--搜索手机型号按钮-->
+  <view class="phone_btn">
+    <navigator url="" class="nav_otherlocal local" url="../type/type">出售其他机型</navigator>
+    <navigator url="../local/local" class="nav_local local">出售本机</navigator>
+  </view>
+  <!--滑动块-->
+  <view class="hot">
+    <text class="hot_font">热门回收机型</text>
+    <!--循环热门手机-->
+    <scroll-view class="scroll_view" scroll-x="true">
+      <block wx:for="{{hot}}">
+        <view class="viewBox">
+          <navigator url="../repair/repair" class="go_rep">
+            <image src="{{item.img}}" class="hot_Img"></image>
+            <text class="hot_type">{{item.p_name}}</text>
+            <text class="hot_price">回收价<text>￥{{item.p_price}}</text></text>
+            <text class="hot_hs">立即回收</text>
+          </navigator>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+  <!--logo-->
+  <view class="hot">
+    <text class="hot_font">手机型号</text>
+    <!--手机型号-->
+    <swiper indicator-dots="true" indicator-color="#a0a0a0" indicator-active-color="#66c428">
+      <swiper-item class="swp_box">
+        <block wx:for="{{logo_one}}">
+          <view class="swp">
+            <image src="{{item.img}}" class="swp_img"></image>
+            <text class="swp_name">{{item.name}}</text>
+          </view>
+        </block>
+      </swiper-item>
+      <swiper-item class="swp_box">
+        <block wx:for="{{logo_two}}">
+          <view class="swp">
+            <image src="{{item.img}}" class="swp_img"></image>
+            <text class="swp_name">{{item.name}}</text>
+          </view>
+        </block>
+      </swiper-item>
+      <swiper-item class="swp_box">
+        <block wx:for="{{logo_three}}">
+          <view class="swp">
+            <image src="{{item.img}}" class="swp_img"></image>
+            <text class="swp_name">{{item.name}}</text>
+          </view>
+        </block>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!--视屏-->
+  <view class="hot">
+    <text class="hot_font">回收通资讯</text>
+    <video src="{{videoSrc}}" objectFit="fill" autoplay="{{scrollTop>400 ? 'true' : 'false'}}" class="video">
+    </video> 
+  </view> 
+</scroll-view>
+ 

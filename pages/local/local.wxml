@@ -1,0 +1,17 @@
+<!--local.wxml-->
+<view class="myphone">
+  <!--搜索框-->
+  <view class="inp">
+    <view class="inp_inp">{{SystemInfo.model}}</view>
+    <navigator url="../type/type" class="inp_text" catchtap="goTypePhone">取消</navigator>
+  </view>
+  <view class="history_local">
+    <!--单个-->
+    <view class="his_box">
+      <text class="his_name">{{SystemInfo.model}}</text>
+      <text class="his_text">最高价：</text>
+      <text class="his_pirce">2565</text>
+    </view>
+  </view>
+  <text class="last_text">没有更多商品了</text>
+</view>

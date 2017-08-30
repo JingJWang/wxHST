@@ -1,0 +1,11 @@
+<!--list.wxml-->
+<view class="box">
+  <view class="list" bindtap="detail">
+    <view class="shop_img"></view>
+    <view class="right">
+      <text class="shop_name rit">oppo手机</text><!--名字-->
+      <text class="shop_price rit">￥320.00</text><!--价钱-->
+      <text class="shop_time rit">2017年8月22日 15:55:55</text><!--时间-->
+    </view>
+  </view>
+</view>
